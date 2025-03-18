@@ -1,7 +1,7 @@
 # nginx-fluentd-logging
 
 ## Why chose fluentd
-We chose Fluentd as our logging solution because it is lightweight, easy to use, and works well with containers like Docker. Fluentd connects directly with NGINX using a simple configuration (access_log fluentd:24224), so we don’t need to install extra tools to collect logs. It also stores logs in a structured format (JSON), which makes them easier to read, search, and analyze. This helps us quickly understand what’s happening with our NGINX server without complicated setups.
+I chose Fluentd as my logging solution because it is lightweight, easy to use, and works well with containers like Docker. Fluentd connects directly with NGINX using a simple configuration (access_log fluentd:24224), so I don’t need to install extra tools to collect logs. It also stores logs in a structured format (JSON), which makes them easier to read, search, and analyze. This helps us quickly understand what’s happening with our NGINX server without complicated setups.
 ## Why I didn't chose other logging solution
 Other logging solutions like Filebeat, Logstash, Promtail, Graylog, OpenSearch, Rsyslog, Vector, and ClickHouse were not chosen because they require more setup and are better suited for larger, more complex systems. Filebeat is mainly designed to read logs from files rather than directly collecting logs from NGINX. Logstash, while powerful, is resource-heavy and not ideal for a lightweight demo. Promtail is primarily focused on Kubernetes environments rather than standalone NGINX setups.
 
